@@ -18,11 +18,13 @@ $this->params['breadcrumbs'][] = $this->title;
             </ul>
         </div>
     </nav>
-    <h1><?= Html::encode($this->title) ?></h1>
+    <div class="d-flex align-items-center justify-content-between mt-3 mb-3">
+        <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>
-        <?= Html::a('Create Complectation Products', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+        <p class="mb-0">
+            <?= Html::a('Create Complectation Products', ['create'], ['class' => 'btn btn-info p-2']) ?>
+        </p>
+    </div>
 
     <?php Pjax::begin(); ?>
 

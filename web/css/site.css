@@ -1496,6 +1496,9 @@ input[readonly], select[readonly], textarea[readonly] {
     font-size: 13px;
     letter-spacing: 1px;
     text-transform: uppercase; }
+.table > thead > tr > th >a {
+    color: #1b55e2;
+}
 
 .table > tbody > tr > td .usr-img-frame {
     background-color: #ebedf2;
@@ -2287,18 +2290,4 @@ input[type="date"]::-webkit-datetime-edit-day-field{
 
 .column2 {
     width: 50%;
-}
-
-#navbarDropdownMessages {
-    background: none; 
-    border: none; 
-    color: white;
-}
-
-#navbarDropdownMessages:hover {
-    box-shadow: none;
-}
-
-.show {
-    display: block !important;
 }

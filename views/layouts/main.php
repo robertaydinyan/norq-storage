@@ -51,9 +51,9 @@ AppAsset::register($this);
                     <li class="nav-item theme-text">
                         <a href="/" class="nav-link"> NORQ </a>
                     </li>
-                    <li>
+                   <!-- <li>
                         <a href="#" class="open-nav" onclick="openNav()">&#9776;</a>
-                    </li>
+                    </li>-->
                     <!-- <li class="nav-item theme-text">
                         <a href="" class="nav-link subnav"> Menu1</a>
                     </li> -->
@@ -62,32 +62,6 @@ AppAsset::register($this);
                 </ul>
 
                 <ul class="navbar-item flex-row ml-md-auto">
-                    <li class="nav-item dropdown no-caret dropdown-notifications">
-                        <a class="btn btn-icon btn-transparent-dark dropdown-toggle" style="padding-top: 16px;"id="navbarDropdownMessages" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-bell"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-messages dropdown-menu-right border-0 shadow animated--fade-in-up" aria-labelledby="navbarDropdownMessages">
-                            <h6 class="dropdown-header dropdown-notifications-header">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail mr-2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                                Message Center
-                            </h6>
-                            <a class="dropdown-item dropdown-notifications-item" href="#!">
-            <!--                    <img class="dropdown-notifications-item-img" src="https://source.unsplash.com/vTL_qy03D1I/60x60">-->
-                                <div class="dropdown-notifications-item-content">
-                                    <div class="dropdown-notifications-item-content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                                    <div class="dropdown-notifications-item-content-details">Emily Fowler · 58m</div>
-                                </div>
-                            </a>
-                            <a class="dropdown-item dropdown-notifications-item" href="#!">
-            <!--                    <img class="dropdown-notifications-item-img" src="https://source.unsplash.com/4ytMf8MgJlY/60x60">-->
-                                <div class="dropdown-notifications-item-content">
-                                    <div class="dropdown-notifications-item-content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                                    <div class="dropdown-notifications-item-content-details">Diane Chambers · 2d</div>
-                                </div>
-                            </a>
-                            <a class="dropdown-item dropdown-notifications-footer" href="#!">Read All Messages</a>
-                        </div>
-                    </li>
                     <li class="nav-item dropdown user-profile-dropdown">
                         <a href="javascript:void(0);" class="nav-link dropdown-toggle user" id="userProfileDropdown"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -95,6 +69,17 @@ AppAsset::register($this);
                         </a>
                         <div class="dropdown-menu position-absolute" aria-labelledby="userProfileDropdown">
                             <div class="">
+                                <!-- <div class="dropdown-item">
+                                    <a class="" href="/user/user-profile">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="feather feather-user">
+                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="12" cy="7" r="4"></circle>
+                                        </svg>
+                                        Պրոֆիլ </a>
+                                </div> -->
                                 <div class="dropdown-item">
                                     <a class="" href="/site/logout">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"

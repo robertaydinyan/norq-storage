@@ -34,16 +34,16 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-function openNav() {
-    $('.dropdown-menu').removeClass('show');
-    document.getElementById("sidenav").style.width = "300px";
-    window.localStorage.aside = true;
-}
+// function openNav() {
+//     $('.dropdown-menu').removeClass('show');
+//     document.getElementById("sidenav").style.width = "300px";
+//     window.localStorage.aside = true;
+// }
 
-function closeNav() {
-    document.getElementById("sidenav").style.width = "0";
-    window.localStorage.aside = false;
-}
-if (window.localStorage.aside == 'true') {
-    openNav();
-}
+// function closeNav() {
+//     document.getElementById("sidenav").style.width = "0";
+//     window.localStorage.aside = false;
+// }
+// if (window.localStorage.aside == 'true') {
+//     openNav();
+// }

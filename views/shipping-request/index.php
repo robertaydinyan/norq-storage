@@ -34,6 +34,7 @@ $this->registerJsFile('@web/js/custom-tree.js', ['depends' => 'yii\web\JqueryAss
 
     <div style="padding:20px;">
         <form class="row" action="" method="get">
+<<<<<<< HEAD
             
             <div class="col-sm-auto shipping-request-filter">
                 <button type="button" class="btn btn-primary form-control">
@@ -46,6 +47,13 @@ $this->registerJsFile('@web/js/custom-tree.js', ['depends' => 'yii\web\JqueryAss
                         <label for="">ընդունող պահեստ</label>
                         <select name="provider_warehouse_id" class="form-control">
                             <option value=""></option>
+=======
+            <div class="col-sm-4" style="margin-bottom: 10px;">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <select name="provider_warehouse_id" class="form-control">
+                            <option value="">ընդունող պահեստ</option>
+>>>>>>> 3838effda7d0739e89e30adcf97e1b0164696881
                             <?php if(!empty($warehouses)){
                                 foreach ($warehouses as $warehouse =>$wh){
                                     if(@$_GET['provider_warehouse_id'] == $warehouse){
@@ -58,10 +66,16 @@ $this->registerJsFile('@web/js/custom-tree.js', ['depends' => 'yii\web\JqueryAss
                             } ?>
                         </select>
                     </div>
+<<<<<<< HEAD
                     <div class="col-sm-2">
                         <label for="">ստացող պահեստ</label>
                         <select name="supplier_warehouse_id" class="form-control">
                             <option value=""></option>
+=======
+                    <div class="col-sm-4">
+                        <select name="supplier_warehouse_id" class="form-control">
+                            <option value="">ստացող պահեստ</option>
+>>>>>>> 3838effda7d0739e89e30adcf97e1b0164696881
                             <?php if(!empty($warehouses)){
                                 foreach ($warehouses as $warehouse =>$wh){
                                     if(@$_GET['supplier_warehouse_id'] == $warehouse){
@@ -74,10 +88,16 @@ $this->registerJsFile('@web/js/custom-tree.js', ['depends' => 'yii\web\JqueryAss
                             } ?>
                         </select>
                     </div>
+<<<<<<< HEAD
                     <div class="col-sm-2">
                         <label for="">Պատասխանատու</label>
                         <select name="user_id" class="form-control">
                             <option value=""></option>
+=======
+                    <div class="col-sm-4">
+                        <select name="user_id" class="form-control">
+                            <option value="">Պատասխանատու</option>
+>>>>>>> 3838effda7d0739e89e30adcf97e1b0164696881
                             <?php if(!empty($users)){
                                 foreach ($users as $user =>$usval){
                                     if(@$_GET['user_id'] == $user){
@@ -90,6 +110,7 @@ $this->registerJsFile('@web/js/custom-tree.js', ['depends' => 'yii\web\JqueryAss
                             } ?>
                         </select>
                     </div>
+<<<<<<< HEAD
 
                     <div class="col-sm-2">
                         <label for="">սկիզբ</label>
@@ -131,6 +152,54 @@ $this->registerJsFile('@web/js/custom-tree.js', ['depends' => 'yii\web\JqueryAss
                         </div>
                     </div>
                     <div style="margin-top: 29px; margin-left: 12px;">
+=======
+                </div>
+
+            </div>
+            <div class="col-sm-2">
+                <input type="text"   value="<?php echo @$_GET['from_created_at'];?>" placeholder="սկիզբ" name="from_created_at" class="form-control datepicker" />
+            </div>
+            <div class="col-sm-2">
+                <input type="text" value="<?php echo @$_GET['to_created_at'];?>" placeholder="ավարտ" name="to_created_at" class="form-control datepicker" />
+            </div>
+            <div class="col-sm-2">
+                <button type="button" class="btn btn-default" style="color:black;" data-toggle="modal" data-target="#suppliersModal">Մատակարարներ</button>
+                <div class="modal fade" id="suppliersModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <?php $id = @intval($_GET['ShippingRequest']['supplier_id']); ?>
+                                <ul class="file-tree" style="border:1px solid #dee2e6;padding-left: 35px;padding-top: 5px;margin-top:0px;">
+                                    <?php foreach ($suppliers as $tableTreePartner) : ?>
+                                        <li class="file-tree-folder">
+                         <span data-name="<?= $tableTreePartner['name'] ?>" class="parent-block"><?= $tableTreePartner['name'] ?>
+                        </span>
+                                            <ul style="display: block;">
+                                                <?= \Yii::$app->view->renderFile('@app/views/suppliers-list/tree_form_sup_table.php', [
+                                                    'tableTreePartner' => $tableTreePartner,
+                                                    'checked' => $id,
+                                                ]); ?>
+                                            </ul>
+                                        </li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="col-sm-2">
+                <div class="row">
+                    <div class="col-sm-6">
+>>>>>>> 3838effda7d0739e89e30adcf97e1b0164696881
                         <button type="submit" class="btn btn-primary form-control">
                             <i class="fas fa-search"></i>
                         </button>

@@ -20,7 +20,7 @@ $this->registerCssFile('@web/css/custom-tree-view.css', ['depends'=>'yii\web\Jqu
             </ul>
         </div>
     </nav>
-    <h4 style="padding: 20px;"><?= Html::encode($this->title) ?> <a style="float: right;margin-right: 10px;" href="<?= Url::to(['create']) ?>"  class="btn btn-sm btn-success" >Ստեղծել Կոմպլեկտացիա</a></h4>
+    <h4 style="padding: 20px;"><?= Html::encode($this->title) ?> <a style="float: right;margin-right: 10px;" href="<?= Url::to(['create']) ?>"  class="btn  btn-info p-3" >Ստեղծել Կոմպլեկտացիա</a></h4>
 
     <?php Pjax::begin(); ?>
     <div style="padding:20px;" >
@@ -46,7 +46,7 @@ $this->registerCssFile('@web/css/custom-tree-view.css', ['depends'=>'yii\web\Jqu
                     },
                     'delete' => function ($url, $model) {
                         return Html::a('<i class="fas fa-trash-alt"></i>', $url, [
-                            'title' => Yii::t('app', 'Ջբջել'),
+                            'title' => Yii::t('app', 'Ջնջել'),
                             'class' => 'btn text-danger btn-sm',
                             'data' => [
                                 'confirm' => 'Are you absolutely sure ? You will lose all the information about this user with this action.',

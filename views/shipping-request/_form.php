@@ -192,13 +192,21 @@ $this->registerCssFile('@web/css/ui-kit.css', ['depends' => [\yii\bootstrap4\Boo
         <input type="text" id="product-invoice" value="<?php echo $model->invoice;?>" class="form-control" name="ShippingRequest[invoice]" maxlength="255">
     </div>
 </div>
+<<<<<<< HEAD
 <div class="shipping-request-form col-sm-9" style="display: none">
+=======
+<div class="shipping-request-form col-sm-6">
+>>>>>>> 3838effda7d0739e89e30adcf97e1b0164696881
     <?php if($model->isNewRecord){ ?>
     <div class="hide-block"></div>
     <div id="product-add-block" class="product-add-block"></div>
     <div id="deal-addresses"  class="module-service-form-card border-primary position-relative col-md-12 mt-3">
         <div class="row product-block" >
+<<<<<<< HEAD
             <div class="col-sm-3">
+=======
+            <div class="col-sm-4">
+>>>>>>> 3838effda7d0739e89e30adcf97e1b0164696881
                 <?= $form->field($model, 'nomenclature_product_id[]', [
                     'template' => '{input}{label}{error}{hint}',
                     'options' => ['class' => 'form-group sk-floating-label nm_products'],
@@ -216,7 +224,11 @@ $this->registerCssFile('@web/css/ui-kit.css', ['depends' => [\yii\bootstrap4\Boo
                     ],
                 ]) ?>
             </div>
+<<<<<<< HEAD
             <div class="col-sm-3">
+=======
+            <div class="col-sm-4">
+>>>>>>> 3838effda7d0739e89e30adcf97e1b0164696881
                 <div class="form-group counts-input sk-floating-label field-shippingrequest-count">
                     <select name="ShippingRequest[nomenclature_product_id][]" class="ns_products form-control" required="required" >
                         <option value=""></option>
@@ -225,7 +237,11 @@ $this->registerCssFile('@web/css/ui-kit.css', ['depends' => [\yii\bootstrap4\Boo
                 </div>            
             </div>
      
+<<<<<<< HEAD
             <div class="col-sm-3">
+=======
+            <div class="col-sm-4">
+>>>>>>> 3838effda7d0739e89e30adcf97e1b0164696881
                 <?= $form->field($model, 'count[]', [
                     'options' => ['class' => 'form-group counts-input sk-floating-label'],
                     'template' => '{input}{label}{error}{hint}'
@@ -238,7 +254,11 @@ $this->registerCssFile('@web/css/ui-kit.css', ['depends' => [\yii\bootstrap4\Boo
                     <div class="help-block"></div>
                 </div>
             </div>
+<<<<<<< HEAD
             <div class="col-sm-3">
+=======
+            <div class="col-sm-4">
+>>>>>>> 3838effda7d0739e89e30adcf97e1b0164696881
                 <div class="remove-address d-none float-right">
                     <span class="ui-btn ui-btn-xs ui-btn-danger card-action-btn-remove-address"><?= Yii::t('app', 'Ջնջել') ?></span>
                 </div>

@@ -290,7 +290,6 @@ $(document).ready(function () {
             $('.check-counts').removeAttr('disabled');
         }
     });
-
     $body.on('change', '#shippingrequest-provider_warehouse_id', function () {
         var v = $(this).val();
         $("#shippingrequest-supplier_warehouse_id").find("option").removeAttr('disabled');
