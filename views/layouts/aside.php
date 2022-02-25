@@ -1,12 +1,12 @@
 <?php
 use yii\helpers\Url;
 ?>
-<div id="sidenav" class="sidenav">
+<div id="sidenav" class="sidenav d-flex align-items-center" >
     <a href="/">
         <img src="/images/logo.svg" class="navbar-logo" alt="logo" width="32">
         <span style="font-size: 12px"> NORQ </span>
     </a>
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
     <a href="<?php echo Url::to(['/complectation']); ?>">Կոմպլեկտացիա</a>
     <!-- <a href="<?php echo Url::to(['/complectation-products']); ?>">Կոմպլեկտավորման արտադրանք</a> -->
     <!-- <a href="<?php echo Url::to(['/partners-list']); ?>">Գործընկերներ</a> -->

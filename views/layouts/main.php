@@ -51,9 +51,9 @@ AppAsset::register($this);
                     <li class="nav-item theme-text">
                         <a href="/" class="nav-link"> NORQ </a>
                     </li>
-                    <li>
+                   <!-- <li>
                         <a href="#" class="open-nav" onclick="openNav()">&#9776;</a>
-                    </li>
+                    </li>-->
                     <!-- <li class="nav-item theme-text">
                         <a href="" class="nav-link subnav"> Menu1</a>
                     </li> -->
@@ -111,7 +111,7 @@ AppAsset::register($this);
     </div>
 </div>
 
-<?php echo $this->render('notifications'); ?>
+<?php //echo $this->render('notifications'); ?>
 <?php echo $this->render('footer'); ?>
 <?php $this->endBody() ?>
 </body>
