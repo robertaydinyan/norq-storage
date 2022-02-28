@@ -63,7 +63,7 @@ $this->registerJsFile('@web/libs/js/locations.js', ['depends' => 'yii\web\Jquery
         <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.html5.min.js"></script>
         <script type="text/javascript" src="https://cdn.datatables.net/buttons/2.0.0/js/buttons.print.min.js"></script>
   
-        <table id="example" class="display nowrap" style="width:100%">
+        <table id="example" class="table table-hover" style="width:100%">
 
             <thead>
             <?php if (!empty($dataProvider['result'])) : ?>
@@ -101,7 +101,14 @@ $this->registerJsFile('@web/libs/js/locations.js', ['depends' => 'yii\web\Jquery
             $('#example').DataTable( {
                 dom: 'Bfrtip',
                 buttons: [
-                     'csv', 'excel'
+                    {
+                        text: 'csv',
+                        className: 'csv'
+                    },
+                    {
+                        text: 'excel',
+                        className: 'excel'
+                    },
                 ],
                 "oLanguage": {
                     "sSearch": "Որոնում "

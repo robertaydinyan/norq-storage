@@ -16,7 +16,7 @@ use yii\widgets\ActiveForm;
         <?= $form->field($model, 'type')->textInput(['maxlength' => true]) ?>
     </div>
     <div style="padding-left: 15px;">
-        <?= Html::submitButton('Պահպանել', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('Պահպանել', ['class' => 'btn btn-info p-2']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

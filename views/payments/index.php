@@ -28,7 +28,7 @@ $this->registerCssFile('@web/css/custom-tree-view.css', ['depends'=>'yii\web\Jqu
     }
 </style>
 <div class="group-product-index">
-   <nav id="w4" class="main-header navbar navbar-expand bg-white navbar-light border-bottom">
+   <nav id="w4" class="main-header navbar navbar-expand bg-white navbar-light ">
     <div id="w3-collapse" class="collapse navbar-collapse">
         <ul id="w5" class="navbar-nav w-100 nav">
             <li class="nav-item"><a class="nav-link" href="/payments">ՎիՃակագրություն</a></li>

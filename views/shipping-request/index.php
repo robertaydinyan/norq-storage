@@ -28,7 +28,7 @@ $this->registerJsFile('@web/js/custom-tree.js', ['depends' => 'yii\web\JqueryAss
     </nav>
 
     <h4 style="padding: 20px;"><?= Html::encode($this->title) ?>
-        <a style="float: right" href="<?= Url::to(['create']) ?>"  class="btn btn-sm btn-success" >Ստեղծել հարցում</a>
+        <a style="float: right" href="<?= Url::to(['create']) ?>"  class="btn btn-sm btn-info p-3" >Ստեղծել հարցում</a>
     </h4>
 
 

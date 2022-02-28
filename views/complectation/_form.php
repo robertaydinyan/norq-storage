@@ -80,7 +80,7 @@ $this->registerJsFile('@web/js/complectation.js', ['depends' => 'yii\web\JqueryA
         </div>
     </div>
     <div class="form-group">
-        <?= Html::submitButton('Պահպանել', ['class' => 'btn btn-success check-counts']) ?>
+        <?= Html::submitButton('Պահպանել', ['class' => 'btn btn-info check-counts mt-3 p-3']) ?>
     </div>
     <?php ActiveForm::end(); ?>
 

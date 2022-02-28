@@ -18,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h4 style="padding: 20px;">
         <?= Html::encode($this->title) ?>
         <div style="display: flex;float: right">
-            <a style="margin-right: 10px;" href="<?= Url::to(['/shipping-product']) ?>"  class="btn btn-sm btn-success" >Ապրանքի տեղափոխություն</a>
+            <a style="margin-right: 10px;" href="<?= Url::to(['/shipping-product']) ?>"  class="btn btn-sm btn-info p-3" >Ապրանքի տեղափոխություն</a>
         </div>
     </h4>
 
@@ -26,6 +26,9 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
+        'tableOptions' => [
+            'class' => 'table table-hover'
+        ],
         'columns' => [
             'id',
             'created_at',

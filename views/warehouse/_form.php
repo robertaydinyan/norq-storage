@@ -70,12 +70,11 @@ $this->registerJsFile('@web/js/formWarehouse.js', ['depends'=>'yii\web\JqueryAss
     ]) ?>
 
     <div class="form-row" style="margin-left: auto">
-        <div class="c-checkbox">
+        <div class="c-checkbox d-flex">
             <input type="checkbox"
                    value="true"
                    id="address-checkbox"
-                   class="form-control add-address-checkbox"
-                >
+                   class=" add-address-checkbox mr-3">
             <label class="has-star" for="address-checkbox">Ավելացնել հասցե</label>
             <div class="help-block invalid-feedback"></div>
         </div>
@@ -218,7 +217,7 @@ $this->registerJsFile('@web/js/formWarehouse.js', ['depends'=>'yii\web\JqueryAss
     </div>
 
     <div class="form-group">
-        <?= Html::submitButton('Պահպանել', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('Պահպանել', ['class' => 'btn btn-info p-2']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

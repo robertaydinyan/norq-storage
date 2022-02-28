@@ -19,7 +19,7 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'product_id')->textInput() ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('Save', ['class' => 'btn btn-info mt-3']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

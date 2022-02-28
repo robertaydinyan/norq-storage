@@ -75,7 +75,7 @@ $this->registerJsFile('https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/
     <div class="col-sm-2">
         <div class="row">
             <div class="col-sm-6">
-                <button type="submit" class="btn btn-primary form-control">
+                <button type="submit" class="btn btn-info form-control ">
                     Հավաքել
                 </button>
             </div>

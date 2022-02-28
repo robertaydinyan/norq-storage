@@ -93,7 +93,6 @@ span{
     width:100%;
     height:100%;
     opacity: 0.10;
-    background: gray;
     z-index: 1000;
 }
 .file-tree-folder p{
@@ -131,7 +130,7 @@ span{
     content: "\f07c";
     font-family: "Font Awesome 5 Pro" !important;
     font-size: 20px;
-    color: #29a746;
+    color:#1b55e2;
 }
 .file-tree .file-tree-folder.open::after {
     /*-webkit-transform: rotate(180deg);
@@ -139,7 +138,7 @@ span{
     transform: rotate(180deg);*/
     content: "\f07b";
     font-family: "Font Awesome 5 Pro" !important;
-    color: #29a746;
+    color: #1b55e2;
 }
 .file-tree li.file-tree-folder::before {
     display: inline-block;
@@ -163,3 +162,4 @@ span{
 @media (max-width: 767px) {
     .custo-radio { margin-top: 5px; }
 }
+

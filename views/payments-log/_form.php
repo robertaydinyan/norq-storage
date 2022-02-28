@@ -32,7 +32,7 @@ use yii\widgets\ActiveForm;
         <?= $form->field($model, 'price')->textInput(['maxlength' => true]) ?>
     </div>
     <div style="padding-left: 15px;">
-        <?= Html::submitButton('Պահպանել', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('Պահպանել', ['class' => 'btn btn-info mt-3 p-3']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

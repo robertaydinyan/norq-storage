@@ -13,7 +13,7 @@ $this->registerCssFile('@web/css/custom-tree-view.css', ['depends'=>'yii\web\Jqu
 ?>
 <div class="group-product-index">
     <?php echo $this->render('/menu_dirs', array(), true)?>
-    <h4 style="padding: 20px;"><?= Html::encode($this->title) ?> <?= Html::a('Ստեղծել', ['create'], ['class' => 'btn btn-success float-right']) ?></h4>
+    <h4 style="padding: 20px;"><?= Html::encode($this->title) ?> <?= Html::a('Ստեղծել', ['create'], ['class' => 'btn btn-info p-3 float-right']) ?></h4>
 
     <div style="padding: 20px;">
     <?php Pjax::begin(); ?>
@@ -22,6 +22,9 @@ $this->registerCssFile('@web/css/custom-tree-view.css', ['depends'=>'yii\web\Jqu
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
+        'tableOptions' => [
+            'class' => 'table table-hover'
+        ],
         'columns' => [
             'id',
             'name',

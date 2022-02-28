@@ -2291,3 +2291,15 @@ input[type="date"]::-webkit-datetime-edit-day-field{
 .column2 {
     width: 50%;
 }
+
+/*Nune*/
+
+.main-header {
+    border-bottom:1px dashed #1b55e2;
+}
+
+.csv , .excel {
+    background: #1b55e2!important;
+    border:1px solid  #1b55e2!important;
+    color:#fff!important;
+}

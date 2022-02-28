@@ -15,13 +15,13 @@ $this->registerJsFile('@web/js/custom-tree.js', ['depends'=>'yii\web\JqueryAsset
 ?>
 <div class="group-product-index">
     <?php echo $this->render('/menu_dirs', array(), true)?>
-    <h4 style="padding: 20px;"><?= Html::encode($this->title) ?>  <a style="float: right;margin-right: 10px;" href="<?= Url::to(['create']) ?>"  class="btn btn-sm btn-success" >Ստեղծել Ապրանքի Նոմենկլատուրա</a></h4>
+    <h4 style="padding: 20px;"><?= Html::encode($this->title) ?>  <a style="float: right;margin-right: 10px;" href="<?= Url::to(['create']) ?>"  class="btn btn-sm btn-info p-3" >Ստեղծել Ապրանքի Նոմենկլատուրա</a></h4>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
     <div style="padding:20px;" >
         <div class="row">
             <div class="col-sm-3">
-                <ul class="file-tree" style="border:1px solid #dee2e6;padding: 30px;padding-top: 10px;margin-top:20px;">
+                <ul class="file-tree" style="padding: 30px;padding-top: 10px;margin-top:20px;">
                 <?php foreach ($tableTreeGroups as $tableTreeGroup) : ?>
                         <li class="file-tree-folder"> <span data-name="l<?= $tableTreeGroup['name'] ?>"> <?= $tableTreeGroup['name'] ?> </span>
                             <ul style="display: block;">

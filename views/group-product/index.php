@@ -31,19 +31,14 @@ $this->registerJsFile('@web/libs/js/table/datatables/dataTables-fixedheader.js',
     div.dataTables_wrapper {
         width: 95%;
     }
-    .fa-plus{
-        color:#29a746;
-    }
-    .fa-trash{
-        color:darkred;
-    }
+
 </style>
 <div class="group-product-index" >
     <?php echo $this->render('/menu_dirs', array(), true)?>
-    <h4 style="padding: 20px;"><?= Html::encode($this->title) ?> <p style="float: right;"><button class="btn btn-sm btn-success"  onclick="addPopup(0)">Ստեղծել Ապրանքի խումբ</button></p></h4>
+    <h4 style="padding: 20px;"><?= Html::encode($this->title) ?> <p style="float: right;"><button class="btn btn-sm btn-info p-3"  onclick="addPopup(0)">Ստեղծել Ապրանքի խումբ</button></p></h4>
     <div style="display: flex">
         <div class="col-lg-12">
-            <ul class="file-tree" style="border:1px solid #dee2e6;padding: 30px;padding-top: 10px;margin-top:20px;">
+            <ul class="file-tree" style="padding: 30px;padding-top: 10px;margin-top:20px;">
                 <?php foreach ($tableTreeGroups as $tableTreeGroup) : ?>
                     <li class="file-tree-folder" data-id="<?= $tableTreeGroup['id'] ?>"> <span data-name="<?= $tableTreeGroup['name'] ?>" class="parent-block"> <?= $tableTreeGroup['name'] ?>
                             <i class="fa fa-plus" onclick="addPopup(<?= $tableTreeGroup['id'] ?>)"></i>

@@ -36,9 +36,9 @@ $this->registerJsFile('@web/js/plugins/table/datatables/dataTables-fixedheader.j
 <div  class="group-product-index">
 <?php echo $this->render('/menu_dirs', array(), true)?>
         <h4 style="padding: 20px;"><?= Html::encode($this->title) ?>
-        <a href="/product"><small style="font-size:12px;" class="btn btn-success">Պահեստներ</small></a>
-        <a style="float: right;" class="btn btn-sm btn-primary" data-toggle="collapse" href="#search_" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="fa fa-search"></i></a>
-        <a style="float: right;margin-right: 10px;" href="<?= Url::to(['create']) ?>"  class="btn btn-sm btn-success btn-sm" >Ստեղծել</a>
+        <a href="/product"><small style="font-size:12px;" class="btn btn-info p-2">Պահեստներ</small></a>
+        <a style="float: right;" class="btn btn-sm btn-primary" data-toggle="collapse" href="#search_" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="fa fa-search p-1"></i></a>
+        <a style="float: right;margin-right: 10px;" href="<?= Url::to(['create']) ?>"  class="btn btn-sm btn-info p-2 btn-sm" >Ստեղծել</a>
     </h4>
 
     <div style="clear: both;"></div>

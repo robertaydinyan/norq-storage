@@ -14,14 +14,14 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="group-product-index">
 
-    <h4 style="padding: 20px;"><?= Html::encode($this->title) ?> <a style="float: right" href="<?= Url::to(['create']) ?>"  class="btn btn-sm btn-success" >Ստեղծել Պահեստ</a></h4>
+    <h4 style="padding: 20px;"><?= Html::encode($this->title) ?> <a style="float: right" href="<?= Url::to(['create']) ?>"  class="btn btn-sm btn-info p-3" >Ստեղծել Պահեստ</a></h4>
     <div style="padding:20px;" class="table">
-        <table class="table">
+        <table class="table table-hover">
             <?php foreach ($warehouse_types as $ware_type => $ware_type_val){ ?>
             <tr>
                 <td><?php echo $ware_type_val->id;?></td>
-                <td><a class="nav-link" href="<?= Url::to(['by-type']) ?>?type=<?php echo $ware_type_val->id;?>"><?php echo $ware_type_val->name;?></a></td>
-                <td><a class="nav-link" href="<?= Url::to(['show-by-type']) ?>?type=<?php echo $ware_type_val->id;?>">Դիտել (<?php echo $ware_type_val->count;?>)</a></td>
+                <td><a class="nav-link p-0" href="<?= Url::to(['by-type']) ?>?type=<?php echo $ware_type_val->id;?>"><?php echo $ware_type_val->name;?></a></td>
+                <td><a class="nav-link p-0" href="<?= Url::to(['show-by-type']) ?>?type=<?php echo $ware_type_val->id;?>">Դիտել (<?php echo $ware_type_val->count;?>)</a></td>
             </tr>
             <?php } ?>
         </table>

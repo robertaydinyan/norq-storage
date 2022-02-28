@@ -21,19 +21,14 @@ $this->registerJsFile('@web/js/custom-tree.js', ['depends'=>'yii\web\JqueryAsset
     div.dataTables_wrapper {
         width: 95%;
     }
-    .fa-plus{
-        color:#29a746;
-    }
-    .fa-trash{
-        color:darkred;
-    }
+
 </style>
 <div class="group-product-index">
     <?php echo $this->render('/menu_dirs', array(), true)?>
     <h4 style="padding: 20px;"><?= Html::encode($this->title) ?> </h4>
     <div style="padding:20px;">
         <div>
-            <ul class="file-tree" style="border:1px solid #dee2e6;padding: 30px;padding-top: 10px;margin-top:20px;">
+            <ul class="file-tree" style="padding: 30px;padding-top: 10px;margin-top:20px;">
                 <?php foreach ($tableTreePartners as $tableTreePartner) : ?>
                     <li class="file-tree-folder">
                          <span data-name="<?= $tableTreePartner['name'] ?>" class="parent-block"><?= $tableTreePartner['name'] ?>
