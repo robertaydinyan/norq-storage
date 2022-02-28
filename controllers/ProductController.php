@@ -69,7 +69,6 @@ class ProductController extends Controller
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
             'model' => $model,
-            'address' => $address,
             'regions' => $regions,
             'users' => $users,
             'nProducts' => $nProducts,

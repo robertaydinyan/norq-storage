@@ -47,9 +47,8 @@ class ShippingController extends Controller
         $searchModel = new ShippingSearch();
 
         $userId = Yii::$app->user->identity->id;
-
         $userWarehouseId =  Warehouse::findOne(['user_id' => $userId]);
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams, $userWarehouseId->id);
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams, $userWarehouseId ? $userWarehouseId->id : 0);
 
         return $this->render('index', [
             'searchModel' => $searchModel,

@@ -56,24 +56,24 @@ $this->registerJs("$('.fa-bell').closest('.dropdown-toggle').append('<small clas
             },25000);   
         ");
 ?>
-<div class=<?= $options['class'] ?> >
-    <?php
-    for($i = 0 ; $i < count($menu); $i++){
-        if($notification_count!=''){
-            echo "<span id='show_notifiactions' class='notification_exist ".$options['class']."-button'>";
-        }
-        else{
-            echo "<span class='".$options['class']."-button'>";
-        }
-        echo '<i class="fa fa-bell" aria-hidden="true"></i>';
-        if($notification_count>0){
-            echo "<span class='".$options['class']."-count'>";
-            echo $notification_count;
-            echo '</span>';
-        }
-        echo '</span>';
-    }
-    echo '<div id="notifiactions_content">';
-    echo '</div>';
-    ?>
-</div>
+<!--<div class=--><?//= $options['class'] ?><!-- >-->
+<!--    --><?php
+//    for($i = 0 ; $i < count($menu); $i++){
+//        if($notification_count!=''){
+//            echo "<span id='show_notifiactions' class='notification_exist ".$options['class']."-button'>";
+//        }
+//        else{
+//            echo "<span class='".$options['class']."-button'>";
+//        }
+//        echo '<i class="fa fa-bell" aria-hidden="true"></i>';
+//        if($notification_count>0){
+//            echo "<span class='".$options['class']."-count'>";
+//            echo $notification_count;
+//            echo '</span>';
+//        }
+//        echo '</span>';
+//    }
+//    echo '<div id="notifiactions_content">';
+//    echo '</div>';
+//    ?>
+<!--</div>-->

@@ -46,9 +46,11 @@ $this->registerJsFile('@web/libs/js/locations.js', ['depends' => 'yii\web\Jquery
 <?php echo $this->render('/menu_dirs', array(), true)?>
 
 <div class="group-product-index">
-    <h4 style="padding: 20px;"><?= Html::encode($this->title) ?>
-        <a href="/group-product/show-group-products"><small style="font-size:12px;" class="btn btn-success">Խմբեր</small></a>
-    </h4>
+    <div class="d-flex justify-content-between align-items-center">
+        <h4 style="padding: 20px;"><?= Html::encode($this->title) ?></h4>
+        <a href="/group-product/show-group-products"><small style="font-size:12px;" class="btn btn-info p-3">Խմբեր</small></a>
+    </div>
+
 
 <div class="product-index group-product-index" style="padding: 20px;">
 
